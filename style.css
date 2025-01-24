@@ -9,6 +9,23 @@
   --amarelo: #ffd700;
   --vermelho: #d32f2f;
   --azul: #87ceeb;
+  --preto: #000;
+}
+
+body.dark-mode {
+  --background: #0d1117;
+  --primary-text: #fff;
+  --verde: #32a852;
+  --verde-hover: #267a3e;
+  --branco: #1f1f1f;
+  --amarelo: #ffcc00;
+  --vermelho: #ff5c5c;
+  --azul: #4da6ff;
+  --preto: #d7d7d7;
+}
+
+body {
+  background-color: var(--background);
 }
 
 * {
@@ -51,6 +68,14 @@ nav ul li a {
   text-decoration: none;
   color: var(--primary-text);
   transition: ease 0.3s;
+}
+
+.themes {
+  position: relative;
+}
+
+.themes i {
+  position: absolute;
 }
 
 .header {
@@ -115,7 +140,7 @@ nav ul li a {
 }
 
 #about-us h2 {
-  color: #333;
+  color: var(--primary-text);
   margin-top: 30px;
   font-weight: 500;
   font-size: 35px;
@@ -124,6 +149,7 @@ nav ul li a {
 #about-us p {
   margin-top: 20px;
   font-size: 24px;
+  color: var(--preto);
 }
 
 #about-us button {
@@ -222,6 +248,7 @@ button:hover {
 
 .check {
   font-size: 32px;
+  color: var(--preto);
 }
 
 .our-menu {
@@ -304,6 +331,7 @@ button:hover {
 
 .title p {
   font-size: 32px;
+  color: var(--preto);
 }
 
 .title h2 {
@@ -380,14 +408,17 @@ footer {
 
 .services-footer h1 {
   font-size: 30px;
+  color: var(--preto);
 }
 
 .information h1 {
   font-size: 30px;
+  color: var(--preto);
 }
 
 .adress h1 {
   font-size: 30px;
+  color: var(--preto);
 }
 
 .services-footer a {
@@ -410,6 +441,18 @@ footer {
   color: #5b5b5b;
 }
 
+.adress p {
+  color: var(--primary-text);
+}
+
 nav a:hover {
   color: #5b5b5b;
+}
+
+.darkmode:hover {
+  color: var(--azul);
+}
+
+.lightmode:hover {
+  color: var(--amarelo);
 }

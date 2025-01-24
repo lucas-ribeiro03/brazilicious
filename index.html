@@ -9,6 +9,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,14 +27,17 @@
                     <li><a href="">Services</a></li>
                     <li><a href="">Menu</a></li>
                     <li><a href="">Contact Us</a></li>
-                    <li><i class="fa-solid fa-moon"></i></li>
-                    <li><i class="fa-solid fa-sun"></i></li>
+                    <div class="themes">
+                        <li><i style="cursor: pointer;" class="darkmode fa-solid fa-moon"></i></li>
+                        <li><i class="lightmode fa-solid fa-sun" style="cursor: pointer;"></i></li>
+                    </div>
+
                 </ul>
             </article>
         </nav>
     </div>
 
-    <header>
+    <header data-aos="fade-up">
         <div class="header">
             <aside>
                 <p class="green-p">A Brazilian Experience</p>
@@ -48,7 +53,7 @@
     </header>
 
     <div class="section-about-us">
-        <section id="about-us">
+        <section data-aos="fade-up" id="about-us">
             <article>
                 <img src="assets/table.jpg" alt="">
             </article>
@@ -68,7 +73,7 @@
     </div>
 
     <div class="section-services">
-        <section id="services">
+        <section data-aos="fade-up" id="services">
             <div class="services-title">
                 <p class="offering">Offering</p>
                 <p class="our-services">Our Services</p>
@@ -112,7 +117,7 @@
     </div>
 
     <div class="section-menu">
-        <section id="menu">
+        <section data-aos="fade-up" id="menu">
             <div class="menu-title">
                 <p class="check">Check Out</p>
                 <p class="our-menu">Our Menu</p>
@@ -165,7 +170,7 @@
     </div>
 
     <div class="section-contact">
-        <section id="contact-us">
+        <section data-aos="fade-up" id="contact-us">
             <article>
                 <div class="title">
                     <p>Send a Message</p>
@@ -182,7 +187,7 @@
     </div>
 
     <div class="footer">
-        <footer>
+        <footer data-aos="fade-right">
             <div class="left-footer">
                 <h1>Brazilicious</h1>
                 <p>Restaurant</p>
@@ -226,6 +231,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
 
